@@ -4,7 +4,7 @@
 
 An interactive visualization tool that shows the global Iftar zone (where Muslims break their fast during Ramadan) in real-time. The application displays Muslim population distribution and tracks the sunset line around the globe, highlighting those areas where the fast is currently ending.
 
-![Iftar Zone Visualization Screenshot](screenshot.jpg)
+![Dashboard showing global iftar visualization](images/global_iftar_zone_visualization.png)
 
 ## Features
 

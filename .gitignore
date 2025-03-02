@@ -45,3 +45,4 @@
 *.shp.dwg
 *.shp.gdb
 *.shp.mdb 
+*.code-workspace

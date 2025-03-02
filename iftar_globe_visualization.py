@@ -24,8 +24,8 @@ logging.basicConfig(
 logger = logging.getLogger('iftar_globe')
 
 # Hardcoded paths to raster files
-HIGH_RES_POPULATION_RASTER = "script/raster/Total_Muslim_Fasting_Population.tif"
-LOW_RES_POPULATION_RASTER = "script/raster/tot_pop_mus_fast_low_res.tif"
+HIGH_RES_POPULATION_RASTER = "raster/Total_Muslim_Fasting_Population.tif"
+LOW_RES_POPULATION_RASTER = "raster/tot_pop_mus_fast_low_res.tif"
 
 # Cache for loaded raster data
 HIGH_RES_CACHE = None

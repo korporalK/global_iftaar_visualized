@@ -1,0 +1,102 @@
+2025-03-03 02:33:36,858 - iftar_globe - INFO - Starting Iftar Globe Visualization app
+2025-03-03 02:33:36,858 - iftar_globe - INFO - Loading raster data at application startup (one-time load)
+2025-03-03 02:33:36,859 - iftar_globe - INFO - Loading raster from: script/raster/Total_Muslim_Fasting_Population.tif
+2025-03-03 02:33:36,863 - rasterio._env - INFO - GDAL signalled an error: err_no=4, msg='script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory'
+2025-03-03 02:33:36,864 - iftar_globe - ERROR - Error loading raster: script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory
+Traceback (most recent call last):
+  File "rasterio\\_base.pyx", line 310, in rasterio._base.DatasetBase.__init__
+  File "rasterio\\_base.pyx", line 221, in rasterio._base.open_dataset
+  File "rasterio\\_err.pyx", line 359, in rasterio._err.exc_wrap_pointer
+rasterio._err.CPLE_OpenFailedError: script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Data_analysis\ramadan_fast_visualization\ramadan_fast_visualization\script\iftar_globe_visualization.py", line 134, in load_population_raster
+    with rasterio.open(raster_path) as src:
+         ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Data_analysis\ramadan_fast_visualization\ramadan_fast_visualization\.venv\Lib\site-packages\rasterio\env.py", line 463, in wrapper
+    return f(*args, **kwds)
+  File "D:\Data_analysis\ramadan_fast_visualization\ramadan_fast_visualization\.venv\Lib\site-packages\rasterio\__init__.py", line 368, in open
+    dataset = DatasetReader(path, driver=driver, sharing=sharing, **kwargs)
+  File "rasterio\\_base.pyx", line 312, in rasterio._base.DatasetBase.__init__
+rasterio.errors.RasterioIOError: script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory
+2025-03-03 02:35:26,830 - iftar_globe - INFO - Starting Iftar Globe Visualization app
+2025-03-03 02:35:26,831 - iftar_globe - INFO - Loading raster data at application startup (one-time load)
+2025-03-03 02:35:26,831 - iftar_globe - INFO - Loading raster from: script/raster/Total_Muslim_Fasting_Population.tif
+2025-03-03 02:35:26,835 - rasterio._env - INFO - GDAL signalled an error: err_no=4, msg='script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory'
+2025-03-03 02:35:26,835 - iftar_globe - ERROR - Error loading raster: script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory
+Traceback (most recent call last):
+  File "rasterio\\_base.pyx", line 310, in rasterio._base.DatasetBase.__init__
+  File "rasterio\\_base.pyx", line 221, in rasterio._base.open_dataset
+  File "rasterio\\_err.pyx", line 359, in rasterio._err.exc_wrap_pointer
+rasterio._err.CPLE_OpenFailedError: script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Data_analysis\ramadan_fast_visualization\ramadan_fast_visualization\script\iftar_globe_visualization.py", line 134, in load_population_raster
+    with rasterio.open(raster_path) as src:
+         ~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Data_analysis\ramadan_fast_visualization\ramadan_fast_visualization\.venv\Lib\site-packages\rasterio\env.py", line 463, in wrapper
+    return f(*args, **kwds)
+  File "D:\Data_analysis\ramadan_fast_visualization\ramadan_fast_visualization\.venv\Lib\site-packages\rasterio\__init__.py", line 368, in open
+    dataset = DatasetReader(path, driver=driver, sharing=sharing, **kwargs)
+  File "rasterio\\_base.pyx", line 312, in rasterio._base.DatasetBase.__init__
+rasterio.errors.RasterioIOError: script/raster/Total_Muslim_Fasting_Population.tif: No such file or directory
+2025-03-03 02:36:06,836 - iftar_globe - INFO - Starting Iftar Globe Visualization app
+2025-03-03 02:36:06,841 - iftar_globe - INFO - Loading raster data at application startup (one-time load)
+2025-03-03 02:36:06,841 - iftar_globe - INFO - Loading raster from: raster/Total_Muslim_Fasting_Population.tif
+2025-03-03 02:36:06,851 - iftar_globe - INFO - Raster dimensions: 43200x17055 pixels
+2025-03-03 02:36:11,574 - iftar_globe - INFO - Raster bounds: -180.0, -58.49999999999798, 180.00000000002314, 83.62500000001117
+2025-03-03 02:36:12,523 - iftar_globe - INFO - Loaded population raster with shape: (17055, 43200)
+2025-03-03 02:36:12,704 - iftar_globe - INFO - High-resolution data loaded and cached successfully
+2025-03-03 02:36:12,704 - iftar_globe - INFO - Loading raster from: raster/tot_pop_mus_fast_low_res.tif
+2025-03-03 02:36:12,705 - iftar_globe - INFO - Raster dimensions: 4320x1706 pixels
+2025-03-03 02:36:12,731 - iftar_globe - INFO - Raster bounds: -180.0, -58.49999999999798, 180.00000000002314, 83.66666666667783
+2025-03-03 02:36:12,744 - iftar_globe - INFO - Loaded population raster with shape: (1706, 4320)
+2025-03-03 02:36:12,748 - iftar_globe - INFO - Low-resolution data loaded and cached successfully
+2025-03-03 02:36:12,748 - iftar_globe - INFO - Preparing choropleth data with steps: lat=9, lon=12
+2025-03-03 02:36:12,775 - iftar_globe - INFO - Created choropleth data with 15925 points
+2025-03-03 02:36:12,775 - iftar_globe - INFO - Choropleth data prepared and cached successfully
+2025-03-03 02:36:12,775 - iftar_globe - INFO - Pre-calculating cartesian coordinates for WebGL rendering...
+2025-03-03 02:36:12,859 - iftar_globe - INFO - Cartesian coordinates pre-calculated for 15925 points
+2025-03-03 02:36:12,860 - iftar_globe - INFO - Data initialization complete
+2025-03-03 02:36:12,861 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-03-03 02:36:14,635 - iftar_globe - INFO - Starting Iftar Globe Visualization app
+2025-03-03 02:36:14,636 - iftar_globe - INFO - Loading raster data at application startup (one-time load)
+2025-03-03 02:36:14,636 - iftar_globe - INFO - Loading raster from: raster/Total_Muslim_Fasting_Population.tif
+2025-03-03 02:36:14,647 - iftar_globe - INFO - Raster dimensions: 43200x17055 pixels
+2025-03-03 02:36:21,014 - iftar_globe - INFO - Raster bounds: -180.0, -58.49999999999798, 180.00000000002314, 83.62500000001117
+2025-03-03 02:36:23,214 - iftar_globe - INFO - Loaded population raster with shape: (17055, 43200)
+2025-03-03 02:36:23,573 - iftar_globe - INFO - High-resolution data loaded and cached successfully
+2025-03-03 02:36:23,574 - iftar_globe - INFO - Loading raster from: raster/tot_pop_mus_fast_low_res.tif
+2025-03-03 02:36:23,576 - iftar_globe - INFO - Raster dimensions: 4320x1706 pixels
+2025-03-03 02:36:23,646 - iftar_globe - INFO - Raster bounds: -180.0, -58.49999999999798, 180.00000000002314, 83.66666666667783
+2025-03-03 02:36:23,669 - iftar_globe - INFO - Loaded population raster with shape: (1706, 4320)
+2025-03-03 02:36:23,677 - iftar_globe - INFO - Low-resolution data loaded and cached successfully
+2025-03-03 02:36:23,678 - iftar_globe - INFO - Preparing choropleth data with steps: lat=9, lon=12
+2025-03-03 02:36:23,735 - iftar_globe - INFO - Created choropleth data with 15925 points
+2025-03-03 02:36:23,736 - iftar_globe - INFO - Choropleth data prepared and cached successfully
+2025-03-03 02:36:23,736 - iftar_globe - INFO - Pre-calculating cartesian coordinates for WebGL rendering...
+2025-03-03 02:36:23,948 - iftar_globe - INFO - Cartesian coordinates pre-calculated for 15925 points
+2025-03-03 02:36:23,949 - iftar_globe - INFO - Data initialization complete
+2025-03-03 02:36:26,607 - iftar_globe - INFO - Updating visualization with time=1150, window=10, mode=standard, zoom=1.2
+2025-03-03 02:36:26,607 - iftar_globe - INFO - Computing iftar zone for time=1150, window=10
+2025-03-03 02:36:26,608 - iftar_globe - INFO - Calculated Iftar longitudes: east=-106.25°, west=-108.75°
+2025-03-03 02:36:26,609 - iftar_globe - INFO - Iftar band: east=-106.25°, west=-108.75°, center=-107.50°
+2025-03-03 02:36:26,609 - iftar_globe - INFO - Longitude window width: 2.50°
+2025-03-03 02:36:26,609 - iftar_globe - INFO - Longitude resolution: 0.008334° per pixel
+2025-03-03 02:36:26,610 - iftar_globe - INFO - Creating longitude mask...
+2025-03-03 02:36:26,611 - iftar_globe - INFO - Created longitude mask with 300 columns in zone out of 43200 total
+2025-03-03 02:36:26,611 - iftar_globe - INFO - Band width in pixels: 300, which equals 2.50°
+2025-03-03 02:36:26,641 - iftar_globe - INFO - Processed 5000/17055 rows, current sum: 371,165
+2025-03-03 02:36:26,662 - iftar_globe - INFO - Processed 10000/17055 rows, current sum: 2,015,755
+2025-03-03 02:36:26,683 - iftar_globe - INFO - Processed 15000/17055 rows, current sum: 2,015,755
+2025-03-03 02:36:26,691 - iftar_globe - INFO - Processed 17055/17055 rows, current sum: 2,015,755
+2025-03-03 02:36:26,692 - iftar_globe - INFO - Total population in iftar zone: 2,015,755
+2025-03-03 02:36:26,693 - iftar_globe - INFO - Using cached choropleth data
+2025-03-03 02:36:26,693 - iftar_globe - INFO - Total computation time: 0.08 seconds
+2025-03-03 02:36:26,914 - iftar_globe - INFO - Rendering 3693 points out of 15925 total points
+2025-03-03 02:36:27,032 - iftar_globe - WARNING - Enhanced rendering not supported, falling back to standard rendering: cannot access local variable 'original_lons' where it is not associated with a value
