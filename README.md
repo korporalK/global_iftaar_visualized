@@ -71,7 +71,7 @@ An interactive visualization tool that shows the global Iftar zone (where Muslim
 
 #### Step 4: Resolution Management
 - Created both high-resolution (30 arc-second) and low-resolution versions for performance optimization.
-- The low-resolution raster was created using aggregation in ArcGIS Pro to improve rendering speed.
+- The low-resolution raster was created using the aggregate tool in ArcGIS Pro on the original raster with an aggregation coefficient of 10 to improve rendering speed.
 
 ### 3. Python Implementation
 
